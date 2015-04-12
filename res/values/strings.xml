@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sphero-test2</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="BlinkButton1">Blink</string>
+	<string name="GetSentimentButton2">Get Sentiment</string>
+    <string name="ConnectionSwitch1">Connected:</string>
+    <string name="UrbanPet">I feel great and my urban pet is the best ever.</string>
+</resources>

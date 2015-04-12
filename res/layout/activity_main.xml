@@ -1,0 +1,71 @@
+<!--  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+</RelativeLayout>
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff888888" 
+    android:orientation="vertical">
+
+        
+	    <Button
+	        android:id="@+id/button1"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/BlinkButton1" 
+	        android:visibility="invisible"
+	        android:onClick="blinkButtonClicked" />
+
+	    <EditText
+	        android:id="@+id/editText2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:text="@string/UrbanPet" />
+
+	    <Button
+	        android:id="@+id/button2"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/GetSentimentButton2" 
+	        android:visibility="invisible"
+	        android:onClick="getSentimentButtonClicked" />
+
+	    <EditText
+	        android:id="@+id/editText1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:visibility="invisible" >
+
+	        <requestFocus />
+	    </EditText>
+
+	
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ConnectionSwitch1"
+        android:onClick="connectedSwitchClicked" />
+	    
+    <orbotix.view.connection.SpheroConnectionView
+	    android:id="@+id/sphero_connection_view"
+	    android:layout_width="147dp"
+	    android:layout_height="348dp"
+	    android:background="#FFF" >
+	</orbotix.view.connection.SpheroConnectionView> 
+         
+</LinearLayout>    
+              
